@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore cybersecurity tools, tutorials, and simulations with BishiroBytes. Learn ethical hacking in a secure environment.">
+  <meta name="keywords" content="cybersecurity, ethical hacking, tools, tutorials">
+  <title> BishiroBytes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Matrix Background -->
+  <canvas id="matrix"></canvas>
+
+  <!-- Main Content -->
+  <div id="content">
+    <!-- Header -->
+    <header>
+      <h1>BishiroBytes Cybersecurity Lab</h1>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="tool">
+      <h2>About Us</h2>
+      <p>Welcome to BishiroBytes, a cybersecurity educational platform. Explore security tools and learn ethical hacking techniques in a realistic lab environment.,....(
+      "Warning: This software is not functional yet. Work is currently in progress to update and fix it.,its start work in 2025")
+      </p>
+
+      <!-- Social Media Links -->
+      <h3>Follow Us</h3>
+      <ul>
+        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61550975783303" target="_blank">Facebook Page</a></li>
+        <li><strong>YouTube:</strong> <a href="https://www.youtube.com/@BishiroBytes" target="_blank">YouTube Channel</a></li>
+      </ul>
+    </section>
+
+    <!-- Port Scanner -->
+    <section id="port-scanner" class="tool">
+      <h2>Port Scanner</h2>
+      <form id="port-scan-form">
+        <input type="text" id="target" placeholder="Target IP" required>
+        <input type="number" id="start-port" placeholder="Start Port" required>
+        <input type="number" id="end-port" placeholder="End Port" required>
+        <button type="submit">Scan</button>
+      </form>
+      <ul id="port-scan-results"></ul>
+    </section>
+
+    <!-- Hash Generator -->
+    <section id="hash-tool" class="tool">
+      <h2>Hash Generator</h2>
+      <input type="text" id="hash-text" placeholder="Enter text" required>
+      <button id="generate-hash">Generate Hash</button>
+      <p id="hash-result"></p>
+    </section>
+
+    <!-- Phishing Simulation -->
+    <section id="phishing-tool" class="tool">
+      <h2>Phishing Simulation</h2>
+      <form id="phishing-form">
+        <input type="text" id="phish-username" placeholder="Username" required>
+        <input type="password" id="phish-password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Brute Force Simulation -->
+    <section id="brute-force-tool" class="tool">
+      <h2>Brute-Force Simulation</h2>
+      <form id="brute-force-form">
+        <p>Simulate a brute-force attack (educational purposes only):</p>
+        <input type="text" id="brute-url" placeholder="Target URL" required>
+        <input type="text" id="brute-username" placeholder="Username" required>
+        <label for="brute-wordlist">Upload Wordlist:</label>
+        <input type="file" id="brute-wordlist" accept=".txt" required>
+        <button type="submit">Start Attack</button>
+      </form>
+      <div id="brute-force-progress">
+        <p id="brute-force-status">Attack in Progress...</p>
+        <progress id="brute-force-progress-bar" value="0" max="100"></progress>
+      </div>
+    </section>
+
+    <!-- DDoS Simulation -->
+    <section id="ddos-tool" class="tool">
+      <h2>DDoS Simulation (Educational Purposes Only)</h2>
+      <form id="ddos-form">
+        <p>Simulate a DDoS attack by sending multiple requests to the target URL:</p>
+        <input type="text" id="ddos-url" placeholder="Target URL" required>
+        <input type="number" id="ddos-count" placeholder="Number of Requests" required>
+        <button type="submit">Start DDoS</button>
+      </form>
+      <div id="ddos-progress">
+        <p id="ddos-status">Attack in Progress...</p>
+        <progress id="ddos-progress-bar" value="0" max="100"></progress>
+      </div>
+    </section>
+
+    <!-- Hash Cracker -->
+    <section id="hash-cracker-tool" class="tool">
+      <h2>Hash Cracker</h2>
+      <form id="hash-cracker-form">
+        <input type="text" id="hash-cracker-text" placeholder="Enter Hash" required>
+        <button type="submit">Crack Hash</button>
+      </form>
+      <div id="hash-cracker-progress">
+        <p id="hash-cracker-status">Cracking hash...</p>
+        <progress id="hash-cracker-progress-bar" value="0" max="100"></progress>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
